@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/style.css" />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="sticky top-0" style="z-index: 100">
+      <nav class="bg-black">
+        <div class="flex justify-between px-12 py-5 nav-top">
+          <div class="navItem">
+            <img src="img/sneakers.png" alt="logo.png" />
+          </div>
+          <div class="navItem sm:hidden">
+            <div
+              class="flex items-center px-5 py-2 rounded-lg bg-slate-500 search">
+              <input
+                type="text"
+                class="text-white bg-transparent border-none placeholder-slate-300 searchInput"
+                placeholder="Search" />
+              <img class="w-5 h-5 SearchIcon" src="img/search.png" alt="" />
+            </div>
+          </div>
+          <div class="navItem">
+            <span
+              class="text-xl text-white border-b-2 border-green-500 limitedOffer"
+              >Limited Offer</span
+            >
+          </div>
+        </div>
+        <div
+          class="flex justify-center gap-6 pt-0 pb-5 font-normal text-gray-300 cursor-pointer navBottom">
+          <h1 class="menuItem">AIR FORCE</h1>
+          <h1 class="menuItem">JORDAN</h1>
+          <h1 class="menuItem">BLAZER</h1>
+          <h1 class="menuItem">CRATER</h1>
+          <h1 class="menuItem">HIPPIE</h1>
+        </div>
+      </nav>
+    </header>
+    <!-- End of Navbar -->
+
+    <!-- Slider -->
+    <section>
+      <div
+        class="overflow-hidden slider"
+        style="
+          background: url(https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+          background-size: cover;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 80%);
+        ">
+        <div class="flex overflow-hidden sliderWrapper" style="width: 500vw">
+          <div
+            class="relative flex items-center justify-center w-screen h-screen overflow-hidden sliderItem">
+            <img class="z-10 flex md:w-3/4" src="img/air.png" alt="Air" />
+            <div class="slideBg"></div>
+            <h1
+              class="absolute z-10 font-bold text-center md:text-5xl text-8xl sliderTitle"
+              style="top: 10%; right: 5%">
+              AIR FORCE <br />NEW <br />SEASON
+            </h1>
+            <h2
+              class="absolute text-6xl border-2 border-gray-500 shadow md:text-4xl sliderPrice"
+              style="top: 10%; left: 15%">
+              $119
+            </h2>
+            <button
+              class="absolute z-20 px-3 py-2 text-5xl font-semibold text-center bg-black md:text-3xl buyBtn hover:bg-white hover:text-black"
+              style="bottom: 30%; right: 10%">
+              BUY NOW!
+            </button>
+          </div>
+          <div
+            class="relative flex items-center justify-center w-screen h-screen overflow-hidden sliderItem">
+            <img class="z-10 flex md:w-3/4" src="img/jordan.png" alt="Air" />
+            <div class="slideBg"></div>
+            <h1
+              class="absolute z-10 font-bold text-center md:text-5xl text-8xl sliderTitle"
+              style="top: 10%; right: 5%">
+              AIR JORDAN <br />NEW <br />SEASON
+            </h1>
+            <h2
+              class="absolute text-6xl border-2 border-gray-500 shadow md:text-4xl sliderPrice"
+              style="top: 10%; left: 15%">
+              $149
+            </h2>
+            <button
+              class="absolute z-20 px-3 py-2 text-5xl font-semibold text-center bg-black md:text-3xl buyBtn hover:bg-white hover:text-black"
+              style="bottom: 30%; right: 10%">
+              BUY NOW!
+            </button>
+          </div>
+          <div
+            class="relative flex items-center justify-center w-screen h-screen overflow-hidden sliderItem">
+            <img class="z-10 flex md:w-3/4" src="img/blazer.png" alt="Air" />
+            <div class="slideBg"></div>
+            <h1
+              class="absolute z-10 font-bold text-center md:text-5xl text-8xl sliderTitle"
+              style="top: 10%; right: 5%">
+              BLAZER <br />NEW <br />SEASON
+            </h1>
+            <h2
+              class="absolute text-6xl border-2 border-gray-500 shadow md:text-4xl sliderPrice"
+              style="top: 10%; left: 15%">
+              $109
+            </h2>
+            <button
+              class="absolute z-20 px-3 py-2 text-5xl font-semibold text-center bg-black md:text-3xl buyBtn hover:bg-white hover:text-black"
+              style="bottom: 30%; right: 10%">
+              BUY NOW!
+            </button>
+          </div>
+          <div
+            class="relative flex items-center justify-center w-screen h-screen overflow-hidden sliderItem">
+            <img class="z-10 flex md:w-3/4" src="img/crater.png" alt="Air" />
+            <div class="slideBg"></div>
+            <h1
+              class="absolute z-10 font-bold text-center md:text-5xl text-8xl sliderTitle"
+              style="top: 10%; right: 5%">
+              CRATER <br />NEW <br />SEASON
+            </h1>
+            <h2
+              class="absolute text-6xl border-2 border-gray-500 shadow md:text-4xl sliderPrice"
+              style="top: 10%; left: 15%">
+              $129
+            </h2>
+            <button
+              class="absolute z-20 px-3 py-2 text-5xl font-semibold text-center bg-black md:text-3xl buyBtn hover:bg-white hover:text-black"
+              style="bottom: 30%; right: 10%">
+              BUY NOW!
+            </button>
+          </div>
+          <div
+            class="relative flex items-center justify-center w-screen h-screen overflow-hidden sliderItem">
+            <img class="z-10 flex md:w-3/4" src="img/hippie.png" alt="Air" />
+            <div class="slideBg"></div>
+            <h1
+              class="absolute z-10 font-bold text-center md:text-5xl text-8xl sliderTitle"
+              style="top: 10%; right: 5%">
+              HIPPIE <br />NEW <br />SEASON
+            </h1>
+            <h2
+              class="absolute text-6xl border-2 border-gray-500 shadow md:text-4xl sliderPrice"
+              style="top: 10%; left: 15%">
+              $99
+            </h2>
+            <button
+              class="absolute z-20 px-3 py-2 text-5xl font-semibold text-center bg-black md:text-3xl buyBtn hover:bg-white hover:text-black"
+              style="bottom: 30%; right: 10%">
+              BUY NOW!
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Slider -->
+
+    <!-- Feature -->
+    <section>
+      <div class="grid grid-cols-4 gap-4 px-12 py-5 md:grid-cols-2 md:gap-2">
+        <div
+          class="flex flex-col items-center justify-center gap-2 text-center">
+          <img class="w-20 h-20" src="img/shipping.png" alt="" />
+          <h1 class="text-2xl featurTitle">Free Shipping</h1>
+          <h3 class="featurDesc text-slate-600">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
+            non.
+          </h3>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center gap-2 text-center">
+          <img class="w-20 h-20" src="img/return.png" alt="" />
+          <h1 class="text-2xl featurTitle">30 Days Return</h1>
+          <h3 class="featurDesc text-slate-600">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
+            non.
+          </h3>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center gap-2 text-center">
+          <img class="w-20 h-20" src="img/gift.png" alt="" />
+          <h1 class="text-2xl featurTitle">Free Shipping</h1>
+          <h3 class="featurDesc text-slate-600">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
+            non.
+          </h3>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center gap-2 text-center">
+          <img class="w-20 h-20" src="img/contact.png" alt="" />
+          <h1 class="text-2xl featurTitle">Free Shipping</h1>
+          <h3 class="featurDesc text-slate-600">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi,
+            non.
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Feature -->
+
+    <!-- Product -->
+    <section
+      class="relative"
+      style="
+        background: lightgray;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 90%);
+      ">
+      <div
+        class="grid grid-cols-2 gap-2 px-12 py-20 product md:grid-cols-1 md:gap-2">
+        <div class="productItems">
+          <img class="productImg" src="img/air.png" alt="" />
+        </div>
+        <div class="productDetails">
+          <h1 class="mb-10 text-6xl font-bold uppercase productTitle">
+            AIR FORCE
+          </h1>
+          <h1 class="text-2xl font-medium productPrice">$199</h1>
+          <h3 class="my-5 productDesc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+            cumque obcaecati asperiores vero sunt laudantium debitis voluptas
+            maxime facilis aperiam.
+          </h3>
+          <div class="flex gap-2 colors">
+            <div
+              class="w-10 h-10 rounded color"
+              style="background-color: black"></div>
+            <div
+              class="w-10 h-10 rounded color"
+              style="background-color: darkblue"></div>
+          </div>
+          <div class="my-5 sizes">
+            <span
+              class="px-5 py-1 text-xl bg-white border-2 border-black cursor-pointer size"
+              >42</span
+            >
+            <span
+              class="px-5 py-1 text-xl bg-white border-2 border-black cursor-pointer size"
+              >43</span
+            >
+            <span
+              class="px-5 py-1 text-xl bg-white border-2 border-black cursor-pointer size"
+              >44</span
+            >
+          </div>
+          <button
+            class="px-3 py-1 font-medium text-white bg-black border-2 border-black rounded-sm productButton float-end hover:bg-white hover:text-black">
+            BUY NOW!
+          </button>
+        </div>
+      </div>
+      <!-- Payment -->
+      <div
+        class="absolute inset-0 flex-col hidden px-12 py-3 m-auto bg-white shadow payment"
+        style="width: 380px; height: 500px">
+        <h1 class="text-2xl font-semibold text-gray-400 payTitle">
+          Personal Information
+        </h1>
+        <label class="text-base">Name and Surname</label>
+        <input
+          type="text"
+          placeholder="Name"
+          class="p-2 my-2 border-b-2 border-black payInput" />
+        <label class="text-base">Phone Number</label>
+        <input
+          type="text"
+          placeholder="Phone Number"
+          class="p-2 my-2 border-b-2 border-black payInput" />
+        <label class="text-base">Address</label>
+        <input
+          type="text"
+          placeholder="Address"
+          class="p-2 my-2 border-b-2 border-black payInput" />
+        <h1 class="payTitle">Card Information</h1>
+        <div class="flex cardIcons">
+          <img src="./img/visa.png" width="40" alt="" class="mr-2 cardIcon" />
+          <img src="./img/master.png" alt="" width="40" class="mr-2 cardIcon" />
+        </div>
+        <input
+          type="password"
+          class="p-2 my-2 border-b-2 border-black payInput"
+          placeholder="Card Number" />
+        <div class="flex justify-between cardInfo">
+          <input
+            type="text"
+            placeholder="mm"
+            class="p-2 my-2 border-b-2 border-black payInput sm"
+            style="width: 30%" />
+          <input
+            type="text"
+            placeholder="yyyy"
+            class="p-2 my-2 border-b-2 border-black payInput sm"
+            style="width: 30%" />
+          <input
+            type="text"
+            placeholder="cvv"
+            class="p-2 my-2 border-b-2 border-black payInput sm"
+            style="width: 30%" />
+        </div>
+        <button
+          class="absolute left-0 w-full h-10 text-white bg-blue-600 shadow cursor-pointer payButton -bottom-10">
+          Checkout!
+        </button>
+        <span
+          class="absolute flex items-center justify-center w-5 h-5 p-1 text-white bg-gray-500 cursor-pointer close top-2 right-2"
+          >X</span
+        >
+      </div>
+
+      <!-- End of Payment -->
+    </section>
+    <!-- End of Product -->
+
+    <!-- Gallery -->
+    <section>
+      <div class="grid grid-cols-3 gap-10 px-12 py-10 sm:hidden gallery">
+        <div class="galleryItem">
+          <h1 class="mb-10 text-4xl font-semibold md:text-2xl galleryTitle">
+            Be Yourself!
+          </h1>
+          <img
+            src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""
+            class="galleryImg" />
+        </div>
+        <div class="galleryItem">
+          <img
+            src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""
+            class="galleryImg" />
+          <h1 class="mt-10 text-4xl font-semibold md:text-2xl galleryTitle">
+            This is the First Day of Your New Life
+          </h1>
+        </div>
+        <div class="galleryItem">
+          <h1 class="mb-10 text-4xl font-semibold md:text-2xl galleryTitle">
+            Just Do it!
+          </h1>
+          <img
+            src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""
+            class="galleryImg" />
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex mt-20 sm:flex-col newSeason">
+        <div
+          class="flex flex-col items-center justify-center flex-1 text-center text-white bg-black nsItem">
+          <img
+            src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""
+            class="w-full nsImg"
+            style="height: 500px" />
+        </div>
+        <div
+          class="flex flex-col items-center justify-center flex-1 gap-5 text-center text-white bg-black sm:py-20 nsItem">
+          <h3 class="text-xl nsTitleSm">WINTER NEW ARRIVALS</h3>
+          <h1 class="text-3xl nsTitle">New Season</h1>
+          <h1 class="text-3xl nsTitle">New Collection</h1>
+          <a href="#nav">
+            <button
+              class="p-4 font-bold text-black bg-white cursor-pointer nsButton">
+              CHOOSE YOUR STYLE
+            </button>
+          </a>
+        </div>
+        <div
+          class="flex flex-col items-center justify-center flex-1 text-center text-white bg-black nsItem">
+          <img
+            src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt=""
+            class="w-full nsImg"
+            style="height: 500px" />
+        </div>
+      </div>
+    </section>
+    <!-- End of Gallery -->
+
+    <!-- Footer -->
+    <footer>
+      <div
+        class="flex flex-wrap justify-center gap-40 px-12 pt-10 mx-auto bg-white sm:px-0 sm:gap-6">
+        <div class="my-5 footerMenu">
+          <h1 class="mb-5 text-xl font-semibold text-black fMenuTitle">
+            About Us
+          </h1>
+          <ul class="flex flex-col gap-2 fList">
+            <li class="text-gray-400 fListItem">Company</li>
+            <li class="text-gray-400 fListItem">Contact</li>
+            <li class="text-gray-400 fListItem">Careers</li>
+            <li class="text-gray-400 fListItem">Affiliates</li>
+            <li class="text-gray-400 fListItem">Stores</li>
+          </ul>
+        </div>
+        <div class="my-5 footerMenu">
+          <h1 class="mb-5 text-xl font-semibold text-black fMenuTitle">
+            Useful Links
+          </h1>
+          <ul class="flex flex-col gap-2 fList">
+            <li class="text-gray-400 fListItem">Support</li>
+            <li class="text-gray-400 fListItem">Refund</li>
+            <li class="text-gray-400 fListItem">FAQ</li>
+            <li class="text-gray-400 fListItem">Feedback</li>
+            <li class="text-gray-400 fListItem">Stories</li>
+          </ul>
+        </div>
+        <div class="my-5 footerMenu">
+          <h1 class="mb-5 text-xl font-semibold text-black fMenuTitle">
+            Products
+          </h1>
+          <ul class="flex flex-col gap-2 fList">
+            <li class="text-gray-400 fListItem">Air Force</li>
+            <li class="text-gray-400 fListItem">Air Jordan</li>
+            <li class="text-gray-400 fListItem">Blazer</li>
+            <li class="text-gray-400 fListItem">Crater</li>
+            <li class="text-gray-400 fListItem">Hippie</li>
+          </ul>
+        </div>
+        <div
+          class="flex flex-col items-start justify-center mt-5 sm:w-full md:items-center md:text-center sm:bg-slate-200">
+          <h1 class="mb-5 text-xl font-semibold text-black fMenuTitle">
+            Subscribe to our newsletter
+          </h1>
+          <div class="flex fMail">
+            <input
+              type="text"
+              placeholder="your@email.com"
+              class="px-5 py-2 bg-white border-2 border-black fInput" />
+            <button class="px-2 py-2 text-white bg-black fButton">Join!</button>
+          </div>
+          <h1 class="mt-10 text-xl font-semibold text-black fMenuTitle">
+            Follow Us
+          </h1>
+          <div class="flex gap-3 my-5 fIcons">
+            <img src="./img/facebook.png" alt="" class="w-5 h-5 fIcon" />
+            <img src="./img/twitter.png" alt="" class="w-5 h-5 fIcon" />
+            <img src="./img/instagram.png" alt="" class="w-5 h-5 fIcon" />
+            <img src="./img/whatsapp.png" alt="" class="w-5 h-5 fIcon" />
+          </div>
+          <span class="copyright">Made by BintangRF</span>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
